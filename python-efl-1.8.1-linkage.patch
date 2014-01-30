@@ -1,7 +1,7 @@
-diff -urN python-efl-1.8.0/setup.py python-efl-1.8.0-patched/setup.py
---- python-efl-1.8.0/setup.py	2013-12-07 20:32:32.000000000 +1100
-+++ python-efl-1.8.0-patched/setup.py	2013-12-24 15:35:23.629671843 +1100
-@@ -226,7 +226,7 @@
+diff -urN python-efl-1.8.1/setup.py python-efl-1.8.1-patched/setup.py
+--- python-efl-1.8.1/setup.py	2014-01-18 22:56:36.000000000 +1100
++++ python-efl-1.8.1-patched/setup.py	2014-01-30 20:24:43.842746219 +1100
+@@ -247,7 +247,7 @@
                                  ["efl/dbus_mainloop/dbus_mainloop"+module_suffix,
                                   "efl/dbus_mainloop/e_dbus.c"],
                                  extra_compile_args = dbus_cflags + ecore_cflags,

@@ -2,13 +2,13 @@
 
 Summary:	EFL bindings for Python
 Name:		python-efl
-Version:	1.8.0
+Version:	1.8.1
 Release:	1
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
 Source0:	http://download.enlightenment.org/rel/bindings/python/%{name}-%{version}.tar.gz
-Patch0:		python-efl-1.8.0-linkage.patch
+Patch0:		python-efl-1.8.1-linkage.patch
 BuildRequires:	pkgconfig(dbus-python)
 BuildRequires:	pkgconfig(ecore)
 BuildRequires:	pkgconfig(ecore-file)
