@@ -8,7 +8,7 @@ License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
 Source0:	http://download.enlightenment.org/rel/bindings/python/%{name}-%{version}.tar.bz2
-Patch0:		python-efl-1.8.1-linkage.patch
+Patch0:		python-efl-1.13.0-linkage.patch
 BuildRequires:	pkgconfig(dbus-python)
 BuildRequires:	pkgconfig(ecore)
 BuildRequires:	pkgconfig(ecore-file)
