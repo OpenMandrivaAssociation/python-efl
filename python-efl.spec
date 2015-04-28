@@ -18,7 +18,7 @@ BuildRequires:	pkgconfig(elementary)
 BuildRequires:	pkgconfig(emotion)
 BuildRequires:	pkgconfig(eo)
 BuildRequires:	pkgconfig(evas)
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python2)
 BuildRequires:	python-cython
 Obsoletes:	python-e_dbus < 1.8.0
 Obsoletes:	python-e_dbus < 1.8.0
@@ -40,9 +40,9 @@ Python support files for EFL.
 
 %files
 %doc README
-%{py_platsitedir}/efl/*
-%{py_platsitedir}/emotion/*
-%{py_platsitedir}/python_efl-%{version}-py%{py_ver}.egg-info
+%{py2_platsitedir}/efl/*
+%{py2_platsitedir}/emotion/*
+%{py2_platsitedir}/python_efl-%{version}-py%{py_ver}.egg-info
 
 #----------------------------------------------------------------------------
 
@@ -51,8 +51,8 @@ Python support files for EFL.
 %patch0 -p1
 
 %build
-python setup.py build
+%{__python2} setup.py build
 
 %install
-python setup.py install --root=%{buildroot}
+%{__python2} setup.py install --root=%{buildroot}
 
