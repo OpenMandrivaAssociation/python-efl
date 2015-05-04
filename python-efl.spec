@@ -2,13 +2,13 @@
 
 Summary:	EFL bindings for Python
 Name:		python-efl
-Version:	1.9.0
-Release:	2
+Version:	1.13.0
+Release:	0.2
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
 Source0:	http://download.enlightenment.org/rel/bindings/python/%{name}-%{version}.tar.bz2
-Patch0:		python-efl-1.8.1-linkage.patch
+Patch0:		python-efl-1.13.0-linkage.patch
 BuildRequires:	pkgconfig(dbus-python)
 BuildRequires:	pkgconfig(ecore)
 BuildRequires:	pkgconfig(ecore-file)
@@ -18,7 +18,7 @@ BuildRequires:	pkgconfig(elementary)
 BuildRequires:	pkgconfig(emotion)
 BuildRequires:	pkgconfig(eo)
 BuildRequires:	pkgconfig(evas)
-BuildRequires:	pkgconfig(python2)
+BuildRequires:	pkgconfig(python)
 BuildRequires:	python-cython
 Obsoletes:	python-e_dbus < 1.8.0
 Obsoletes:	python-e_dbus < 1.8.0
@@ -40,9 +40,8 @@ Python support files for EFL.
 
 %files
 %doc README
-%{py2_platsitedir}/efl/*
-%{py2_platsitedir}/emotion/*
-%{py2_platsitedir}/python_efl-%{version}-py%{py_ver}.egg-info
+%{py_platsitedir}/efl/*
+%{py_platsitedir}/python_efl-%{version}-py%{py_ver}.egg-info
 
 #----------------------------------------------------------------------------
 
@@ -51,8 +50,8 @@ Python support files for EFL.
 %patch0 -p1
 
 %build
-%{__python2} setup.py build
+python setup.py build
 
 %install
-%{__python2} setup.py install --root=%{buildroot}
+python setup.py install --root=%{buildroot}
 
