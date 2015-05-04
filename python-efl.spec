@@ -40,13 +40,13 @@ Python support files for EFL.
 
 %files
 %doc README
-%{py_platsitedir}/e_dbus/*
-%{py_platsitedir}/ecore/*
-%{py_platsitedir}/edje/*
+#%{py_platsitedir}/e_dbus/*
+#%{py_platsitedir}/ecore/*
+#%{py_platsitedir}/edje/*
 %{py_platsitedir}/efl/*
-%{py_platsitedir}/elementary/*
-%{py_platsitedir}/emotion/*
-%{py_platsitedir}/evas/*
+#%{py_platsitedir}/elementary/*
+#%{py_platsitedir}/emotion/*
+#%{py_platsitedir}/evas/*
 %{py_platsitedir}/python_efl-%{version}-py%{py_ver}.egg-info
 
 #----------------------------------------------------------------------------
