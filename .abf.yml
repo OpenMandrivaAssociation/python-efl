@@ -1,5 +1,6 @@
 removed_sources:
+  python-efl-1.13.0.tar.bz2: 004fd336d7fce942ac5df41e8a78efa34c6a4e65
   python-efl-1.8.1.tar.bz2: 82b34b9336d517537b2a4032dff9d1e2de8b8dd8
   python-efl-1.9.0.tar.bz2: 377eb29fd291aa499b6560851b34c8bd90ae8ad8
 sources:
-  python-efl-1.13.0.tar.bz2: 004fd336d7fce942ac5df41e8a78efa34c6a4e65
+  python-efl-1.14.0.tar.bz2: 7485e9a3298dee31a036c73f0a725c0162786f4b
