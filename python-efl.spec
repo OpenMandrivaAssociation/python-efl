@@ -18,7 +18,7 @@ BuildRequires:	pkgconfig(elementary) >= 1.19.1
 BuildRequires:	pkgconfig(emotion) >= 1.19.1
 BuildRequires:	pkgconfig(eo) >= 1.19.1
 BuildRequires:	pkgconfig(evas) >= 1.19.1
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python-cython
 Obsoletes:	python-e_dbus < 1.8.0
 Obsoletes:	python-e_dbus < 1.8.0
