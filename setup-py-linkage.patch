@@ -1,0 +1,11 @@
+--- python-efl-1.19.0/setup.py	2017-07-18 15:05:39.006358922 +0100
++++ python-efl-1.19.0/setup.py~	2017-07-18 15:04:39.955658765 +0100
+@@ -425,7 +425,7 @@
+                             extra_compile_args=list(set(dbus_cflags +
+                                                         ecore_cflags +
+                                                         common_cflags)),
+-                            extra_link_args=dbus_libs + ecore_libs)
++                            extra_link_args=dbus_libs + ecore_libs + eina_libs)
+     ext_modules.append(dbus_ml_ext)
+ 
+     # === Elementary ===

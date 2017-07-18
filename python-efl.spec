@@ -2,22 +2,22 @@
 
 Summary:	EFL bindings for Python
 Name:		python-efl
-Version:	1.14.0
+Version:	1.19.0
 Release:	1
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
 Source0:	http://download.enlightenment.org/rel/bindings/python/%{name}-%{version}.tar.bz2
-Patch0:		python-efl-1.13.0-linkage.patch
+Patch0:		setup-py-linkage.patch
 BuildRequires:	pkgconfig(dbus-python)
-BuildRequires:	pkgconfig(ecore)
-BuildRequires:	pkgconfig(ecore-file)
-BuildRequires:	pkgconfig(edje)
-BuildRequires:	pkgconfig(eina)
-BuildRequires:	pkgconfig(elementary)
-BuildRequires:	pkgconfig(emotion)
-BuildRequires:	pkgconfig(eo)
-BuildRequires:	pkgconfig(evas)
+BuildRequires:	pkgconfig(ecore) >= 1.19.1
+BuildRequires:	pkgconfig(ecore-file) >= 1.19.1
+BuildRequires:	pkgconfig(edje) >= 1.19.1
+BuildRequires:	pkgconfig(eina) >= 1.19.1
+BuildRequires:	pkgconfig(elementary) >= 1.19.1
+BuildRequires:	pkgconfig(emotion) >= 1.19.1
+BuildRequires:	pkgconfig(eo) >= 1.19.1
+BuildRequires:	pkgconfig(evas) >= 1.19.1
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python-cython
 Obsoletes:	python-e_dbus < 1.8.0
