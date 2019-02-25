@@ -1,4 +1,5 @@
 %define __noautoprov '(.*)\\.so(.*)'
+%define efl_ver 1.21.1
 
 Summary:	EFL bindings for Python
 Name:		python-efl
@@ -10,15 +11,15 @@ Url:		http://www.enlightenment.org/
 Source0:	http://download.enlightenment.org/rel/bindings/python/%{name}-%{version}.tar.xz
 #Patch0:		python-efl-1.13.0-linkage.patch
 BuildRequires:	python-dbus-devel
-BuildRequires:	pkgconfig(ecore)
-BuildRequires:	pkgconfig(ecore-file)
-BuildRequires:	pkgconfig(edje)
-BuildRequires:	pkgconfig(eina)
-BuildRequires:	pkgconfig(elementary)
-BuildRequires:	pkgconfig(emotion)
-BuildRequires:	pkgconfig(eo)
-BuildRequires:	pkgconfig(evas)
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(ecore) >= %{efl_ver}
+BuildRequires:	pkgconfig(ecore-file) >= efl_ver
+BuildRequires:	pkgconfig(edje) >= efl_ver
+BuildRequires:	pkgconfig(eina) >= efl_ver
+BuildRequires:	pkgconfig(elementary) >= efl_ver
+BuildRequires:	pkgconfig(emotion) >= efl_ver
+BuildRequires:	pkgconfig(eo) >= efl_ver
+BuildRequires:	pkgconfig(evas) >= efl_ver
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python-cython
 Obsoletes:	python-e_dbus < 1.8.0
 Obsoletes:	python-e_dbus < 1.8.0
