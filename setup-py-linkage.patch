@@ -1,6 +1,8 @@
---- python-efl-1.19.0/setup.py	2017-07-18 15:05:39.006358922 +0100
-+++ python-efl-1.19.0/setup.py~	2017-07-18 15:04:39.955658765 +0100
-@@ -425,7 +425,7 @@
+diff --git a/setup.py b/setup.py
+index 82dfe26..cc9401c 100755
+--- a/setup.py
++++ b/setup.py
+@@ -435,7 +434,7 @@ if set(("build", "build_ext", "install", "bdist", "sdist")) & set(sys.argv):
                              extra_compile_args=list(set(dbus_cflags +
                                                          ecore_cflags +
                                                          common_cflags)),

@@ -9,7 +9,8 @@ License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
 Source0:	http://download.enlightenment.org/rel/bindings/python/%{name}-%{version}.tar.xz
-#Patch0:		python-efl-1.13.0-linkage.patch
+Patch0:         remove-clang-unkown-no-var-tracking-assignments-option.patch
+Patch1:         setup-py-linkage.patch
 BuildRequires:	python-dbus-devel
 BuildRequires:	pkgconfig(ecore) >= %{efl_ver}
 BuildRequires:	pkgconfig(ecore-file) >= efl_ver
@@ -19,22 +20,9 @@ BuildRequires:	pkgconfig(elementary) >= efl_ver
 BuildRequires:	pkgconfig(emotion) >= efl_ver
 BuildRequires:	pkgconfig(eo) >= efl_ver
 BuildRequires:	pkgconfig(evas) >= efl_ver
-BuildRequires:	pkgconfig(python3)
+BuildRequires:	pkgconfig(python)
 BuildRequires:	python-cython
-Obsoletes:	python-e_dbus < 1.8.0
-Obsoletes:	python-e_dbus < 1.8.0
-Obsoletes:	python-ecore < 1.8.0
-Obsoletes:	python-ecore-devel < 1.8.0
-Obsoletes:	python-edje < 1.8.0
-Obsoletes:	python-edje-devel < 1.8.0
-Obsoletes:	python-elementary < 1.8.0
-Obsoletes:	python-elementary-devel < 1.8.0
-Obsoletes:	python-emotion < 1.8.0
-Obsoletes:	python-emotion-devel < 1.8.0
-Obsoletes:	python-ethumb < 1.8.0
-Obsoletes:	python-ethumb-devel < 1.8.0
-Obsoletes:	python-evas < 1.8.0
-Obsoletes:	python-evas-devel < 1.8.0
+
 
 %description
 Python support files for EFL.
@@ -48,10 +36,10 @@ Python support files for EFL.
 
 %prep
 %setup -q
-#%%patch0 -p1
+%patch0 -p1 
+%patch1 -p1
 
 %build
-export CC=gcc CXX=g++
 python setup.py build
 
 %install
