@@ -2,7 +2,7 @@
 
 Summary:	EFL bindings for Python
 Name:		python-efl
-Version:	1.14.0
+Version:	1.19.0
 Release:	0.1
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
