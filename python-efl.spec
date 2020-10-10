@@ -9,7 +9,7 @@ License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
 Source0:	http://download.enlightenment.org/rel/bindings/python/%{name}-%{version}.tar.xz
-#Patch0:         remove-clang-unkown-no-var-tracking-assignments-option.patch
+Patch0:         remove-clang-unkown-no-var-tracking-assignments-option.patch
 Patch1:         setup-py-linkage.patch
 BuildRequires:	python-dbus-devel
 BuildRequires:	pkgconfig(ecore) >= %{efl_ver}
