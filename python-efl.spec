@@ -1,9 +1,9 @@
 %define __noautoprov '(.*)\\.so(.*)'
-%define efl_ver 1.24.3
+%define efl_ver 1.25.1
 
 Summary:	EFL bindings for Python
 Name:		python-efl
-Version:	1.24.0
+Version:	1.25.0
 Release:	1
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
