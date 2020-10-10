@@ -1,12 +1,11 @@
-diff --git a/setup.py b/setup.py
-index 82dfe26..d41030b 100755
---- a/setup.py
-+++ b/setup.py
-@@ -211,7 +211,6 @@ ext_modules = []
+diff -uraN python-efl-1.25.0/setup.py omv-python-efl-1.25.0/setup.py
+--- python-efl-1.25.0/setup.py	2020-06-25 18:46:38.312786000 +0200
++++ omv-python-efl-1.25.0/setup.py	2020-10-10 19:49:25.342040998 +0200
+@@ -211,7 +211,6 @@
  py_modules = []
  packages = ["efl"]
  common_cflags = [
--    "-fno-var-tracking-assignments", # seems to lower the mem used during build
-     "-Wno-misleading-indentation", # not needed (we don't indent the C code)
-     "-Wno-deprecated-declarations", # we bind deprecated functions
-     "-Wno-unused-variable", # eo_instance_from_object() is unused
+-    "-fno-var-tracking-assignments",  # seems to lower the mem used during build
+     "-Wno-misleading-indentation",  # not needed (we don't indent the C code)
+     "-Wno-deprecated-declarations",  # we bind deprecated functions
+     "-Wno-unused-variable",  # eo_instance_from_object() is unused
