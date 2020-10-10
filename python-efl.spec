@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 %define __noautoprov '(.*)\\.so(.*)'
 %define efl_ver 1.25.1
 
