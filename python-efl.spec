@@ -1,4 +1,5 @@
-%global debug_package %{nil}
+#global debug_package %{nil}
+%define _empty_manifest_terminate_build 0
 
 %define __noautoprov '(.*)\\.so(.*)'
 %define efl_ver 1.25.1
@@ -6,7 +7,7 @@
 Summary:	EFL bindings for Python
 Name:		python-efl
 Version:	1.25.0
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
