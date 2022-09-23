@@ -1,11 +1,11 @@
-diff -uraN python-efl-1.25.0/setup.py omv-python-efl-1.25.0/setup.py
---- python-efl-1.25.0/setup.py	2020-06-25 18:46:38.312786000 +0200
-+++ omv-python-efl-1.25.0/setup.py	2020-10-10 19:49:25.342040998 +0200
-@@ -211,7 +211,6 @@
+diff -uraN python-efl-1.26.0/setup.py omv-python-efl-1.26.0/setup.py
+--- python-efl-1.26.0/setup.py	2022-02-27 19:14:05.000000000 +0100
++++ omv-python-efl-1.26.0/setup.py	2022-09-23 17:06:24.703459039 +0200
+@@ -114,7 +114,6 @@
  py_modules = []
- packages = ["efl"]
+ packages = ['efl']
  common_cflags = [
--    "-fno-var-tracking-assignments",  # seems to lower the mem used during build
-     "-Wno-misleading-indentation",  # not needed (we don't indent the C code)
-     "-Wno-deprecated-declarations",  # we bind deprecated functions
-     "-Wno-unused-variable",  # eo_instance_from_object() is unused
+-    '-fno-var-tracking-assignments',  # seems to lower the mem used during build
+     '-Wno-misleading-indentation',  # not needed (we don't indent the C code)
+     '-Wno-deprecated-declarations',  # we bind deprecated functions
+     '-Wno-unused-variable',  # eo_instance_from_object() is unused
