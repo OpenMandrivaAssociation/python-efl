@@ -40,8 +40,9 @@ Python support files for EFL.
 %prep
 %autosetup -p1
 
-
 %build
+export CC=gcc
+export CXX=g++
 python setup.py build
 
 %install
