@@ -6,8 +6,8 @@
 
 Summary:	EFL bindings for Python
 Name:		python-efl
-Version:	1.26.0
-Release:	2
+Version:	1.26.1
+Release:	1
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
 Url:		http://www.enlightenment.org/
@@ -31,20 +31,16 @@ BuildRequires:	python-cython
 Python support files for EFL.
 
 %files
-%doc README
 %{py_platsitedir}/efl/*
-%{py_platsitedir}/python_efl-%{version}-py%{py_ver}.egg-info
+%{py_platsitedir}/*.*-info
 
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
-%patch0 -p1 
-%patch1 -p1
+%autosetup -p1
 
 %build
-python setup.py build
+%py_build
 
 %install
-python setup.py install --root=%{buildroot}
-
+%py_install

@@ -1,13 +1,12 @@
-diff --git a/setup.py b/setup.py
-index 82dfe26..cc9401c 100755
---- a/setup.py
-+++ b/setup.py
-@@ -435,7 +434,7 @@ if set(("build", "build_ext", "install", "bdist", "sdist")) & set(sys.argv):
-                             extra_compile_args=list(set(dbus_cflags +
-                                                         ecore_cflags +
-                                                         common_cflags)),
--                            extra_link_args=dbus_libs + ecore_libs)
-+                            extra_link_args=dbus_libs + ecore_libs + eina_libs)
-     ext_modules.append(dbus_ml_ext)
+diff -up python-efl-1.26.1/setup.py.2~ python-efl-1.26.1/setup.py
+--- python-efl-1.26.1/setup.py.2~	2023-11-28 01:47:43.704374805 +0100
++++ python-efl-1.26.1/setup.py	2023-11-28 01:47:54.658431369 +0100
+@@ -284,7 +284,7 @@ if set(('build', 'build_ext', 'install',
+         'efl.dbus_mainloop', ['efl/dbus_mainloop/efl.dbus_mainloop.' + MODULES_EXT,
+                               'efl/dbus_mainloop/e_dbus.c'],
+         extra_compile_args=dbus_cflags + ecore_cflags + common_cflags,
+-        extra_link_args=dbus_libs + ecore_libs
++        extra_link_args=dbus_libs + ecore_libs + eina_libs
+     ))
  
      # === Elementary ===
