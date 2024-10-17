@@ -10,7 +10,7 @@ Version:	1.26.1
 Release:	1
 License:	GPLv3+
 Group:		Graphical desktop/Enlightenment
-Url:		http://www.enlightenment.org/
+Url:		https://www.enlightenment.org/
 Source0:	http://download.enlightenment.org/rel/bindings/python/%{name}-%{version}.tar.xz
 Patch0:         remove-clang-unkown-no-var-tracking-assignments-option.patch
 Patch1:         setup-py-linkage.patch
